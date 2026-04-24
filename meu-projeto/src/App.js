@@ -1,19 +1,16 @@
 
 import './App.css';
 import HelloWorld from './Components/HelloWorld';
+import SayMyName from './Components/SayMyName';
 
 function App() {
-const name = 'Gustavo'
-
-
 
   return (
     <div className="App">
-      <h2>Alterando o JSX</h2>
-      <p>Olá, {name} </p>
       <HelloWorld />
+      <SayMyName nome="Gustavo" />
     </div>
-  );
+  )
 }
 
 export default App;
