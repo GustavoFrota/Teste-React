@@ -1,9 +1,11 @@
+import Item from './Item'
+
 function List() {
     return(
        <>
          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
+            <Item marca='Ferrari' />
+            <Item marca='Fiat' />
          </ul>
        </>
     )
