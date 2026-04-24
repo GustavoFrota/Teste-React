@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <HelloWorld />
       <SayMyName nome="Gustavo" />
+      <SayMyName nome="Roberto" />
     </div>
   )
 }
