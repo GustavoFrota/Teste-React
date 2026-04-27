@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Item from './Item'
 
 function List() {
@@ -10,6 +11,16 @@ function List() {
        </>
     )
 
+}
+
+Item.PropTypes = {
+   marca: PropTypes.string.isRequired,
+   lancamento: PropTypes.number,
+}
+
+Item.defaultProps = {
+   marca: 'Faltou a marca',
+   lancamento: 0,
 }
 
 export default List
