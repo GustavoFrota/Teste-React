@@ -4,8 +4,8 @@ function List() {
     return(
        <>
          <ul>
-            <Item marca='Ferrari' />
-            <Item marca='Fiat' />
+            <Item marca='Ferrari' lancamento={1985}/>
+            <Item marca='Fiat' lancamento={1964}/>
          </ul>
        </>
     )
