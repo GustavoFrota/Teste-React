@@ -1,10 +1,17 @@
 import { useState } from "react"
 
 function Condicional() {
+
+    const [email, setEmail] = useState()
+    const [userEmail, setUserEmail] = useState()
+
     function EnviarEmail(e) {
         e.preventDefault()
-        console.log("Testando")
+        setUserEmail(email)
+    }
 
+    function LimparEmail() {
+        setUserEmail(``)
     }
 
 
@@ -12,10 +19,15 @@ function Condicional() {
         <div>
             <h2>Cadstre o seu e-mail:</h2>
             <form>
-               <input type="email" placeholder="Digite o seu e-mail"></input>
+               <input type="email" placeholder="Digite o seu e-mail" onChange={(e) => setEmail(e.target.value)}></input>
                <button type="submit" onClick={EnviarEmail}>Enviar e-mail</button>
             </form>
-            
+            {userEmail && (
+                <div>
+                  <p>O e-mail do usuário é: {userEmail}</p>
+                <button onClick={LimparEmail}>Limpar e-mail</button>  
+                </div>
+            )}
         </div>
     )
 }
