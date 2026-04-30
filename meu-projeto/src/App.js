@@ -8,11 +8,14 @@ import Evento from './Components/Evento';
 import Form from './Components/Form';
 import Condicional from './Components/Condicional';
 import OutraLista from './Components/OutraLista';
+import { useState } from 'react';
+import SeuNome from './Components/SeuNome';
 
 function App() {
 
   const identidade = "Maria"
   const meusItens = ['React', 'Vue', 'Angular']
+  const [nome, setNome] = useState()
 
   return (
     <div className="App">
@@ -26,6 +29,7 @@ function App() {
       <Form />
       <Condicional />
       <OutraLista itens={meusItens} />
+      <SeuNome setNome={setNome}/>
     </div>
   )
 }
