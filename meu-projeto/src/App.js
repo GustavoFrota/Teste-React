@@ -10,6 +10,7 @@ import Condicional from './Components/Condicional';
 import OutraLista from './Components/OutraLista';
 import { useState } from 'react';
 import SeuNome from './Components/SeuNome';
+import Saudacao from './Components/Saudacao';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Condicional />
       <OutraLista itens={meusItens} />
       <SeuNome setNome={setNome}/>
+      <Saudacao nome={nome} />
     </div>
   )
 }
