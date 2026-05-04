@@ -33,6 +33,11 @@ function App() {
       <OutraLista itens={meusItens} />
       <SeuNome setNome={setNome}/>
       <Saudacao nome={nome} />
+      <Router>
+        <ul>
+          <li> <Link to="/">Home</Link></li>
+        </ul>
+      </Router>
     </div>
   )
 }
