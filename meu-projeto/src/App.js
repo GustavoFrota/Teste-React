@@ -11,7 +11,8 @@ import OutraLista from './Components/OutraLista';
 import { useState } from 'react';
 import SeuNome from './Components/SeuNome';
 import Saudacao from './Components/Saudacao';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Home from './Pages/Home';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
       <SayMyName nome="Gustavo" />
       <SayMyName nome="Roberto" />
       <SayMyName nome={identidade} />
-      <Pessoa nome="Gustavo" idade="18" profissao="Programador" foto="htpps://via.placeholder.com/150" />
+      <Pessoa nome="Gustavo" idade="18" profissao="Programador" foto="https://via.placeholder.com/150" />
       <List />
       <Evento />
       <Form />
@@ -39,6 +40,9 @@ function App() {
           <li> <Link to="/empresa">Empresa</Link></li>
           <li> <Link to="/contato">Contato</Link></li>
         </ul>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+        </Routes>
       </Router>
     </div>
   )
