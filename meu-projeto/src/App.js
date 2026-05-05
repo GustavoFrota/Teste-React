@@ -15,6 +15,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Home from './Pages/Home';
 import Contato from './Pages/Contato';
 import Empresa from './Pages/Empresa';
+import styles from './Pages/Navbar.module.css'
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
       <SeuNome setNome={setNome}/>
       <Saudacao nome={nome} />
       <Router>
-        <ul className={Styles.list}>
+        <ul className={styles.list}>
           <li className={styles.item}> <Link to="/">Home</Link></li>
           <li className={styles.item}> <Link to="/empresa">Empresa</Link></li>
           <li className={styles.item}> <Link to="/contato">Contato</Link></li>
