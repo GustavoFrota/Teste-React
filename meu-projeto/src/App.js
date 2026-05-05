@@ -37,10 +37,10 @@ function App() {
       <SeuNome setNome={setNome}/>
       <Saudacao nome={nome} />
       <Router>
-        <ul>
-          <li> <Link to="/">Home</Link></li>
-          <li> <Link to="/empresa">Empresa</Link></li>
-          <li> <Link to="/contato">Contato</Link></li>
+        <ul className={Styles.list}>
+          <li className={styles.item}> <Link to="/">Home</Link></li>
+          <li className={styles.item}> <Link to="/empresa">Empresa</Link></li>
+          <li className={styles.item}> <Link to="/contato">Contato</Link></li>
         </ul>
         <Routes>
           <Route path='/' element={<Home />}></Route>
