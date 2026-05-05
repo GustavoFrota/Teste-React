@@ -16,6 +16,7 @@ import Home from './Pages/Home';
 import Contato from './Pages/Contato';
 import Empresa from './Pages/Empresa';
 import styles from './Pages/Navbar.module.css'
+import Footer from './Pages/Footer';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/empresa' element={<Empresa />}></Route>
           <Route path='/contato' element={<Contato />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   )
